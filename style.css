@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-    color: #FFD700; /* Yellow hover effect */
+    color: #FFD700;
 }
 
 .intro h1 {
@@ -66,6 +66,7 @@ nav ul li a:hover {
     justify-content: space-between;
     padding: 50px 10%;
     background-color: #fff;
+    align-items: center;
 }
 
 .about-image img {
@@ -130,4 +131,67 @@ footer {
     text-align: center;
     padding: 20px;
     margin-top: 30px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #FFD700;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+.social-links a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .about {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .work-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 32px;
+    }
+
+    .intro p {
+        font-size: 18px;
+    }
+
+    .work-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .about-image img {
+        width: 80%;
+    }
 }
